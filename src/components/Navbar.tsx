@@ -33,6 +33,7 @@ const Navbar = () => {
       </NavTitle>
       <NavList>
         <NavItem to="about" text="about" />
+        <NavItem to="shop" text="shop" />
         <NavItem to="contact" text="contact" />
       </NavList>
     </NavContainer>

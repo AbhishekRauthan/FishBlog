@@ -16,29 +16,23 @@ const Background = styled.section(() => [
 ])
 
 const GlassContainer = styled.div(() => [
-  tw`container lg:pt-10`,
+  tw`container lg:mx-52 lg:py-10 text-center text-white`,
   css`
     & {
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(205, 211, 208, 0.3);
+      backdrop-filter: blur(4px);
     }
-    @supports (
-      (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem))
-    ) {
-      & {
-        background-color: rgba(255, 255, 255, 0.7 +'
-        ');
-        -webkit-backdrop-filter: blur(8rem);
-        backdrop-filter: blur(4rem);
-      }
-    }
-  `
+  `,
 ])
 
 const Hero = () => {
   return (
     <Background>
       <GlassContainer>
-        <h1 tw="text-4xl text-center ">👋 Greetings, fellow enthusiast</h1>
+        <h1 tw="text-5xl capitalize">hey there! 👋</h1>
+        <p tw="text-xl lg:mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloribus nam aliquam cum dolorum. Provident quis eveniet magnam sed aut vel, beatae voluptate quisquam corporis labore sequi, vitae esse exercitationem.
+        Nihil minima eos aliquid iusto, enim cum architecto, doloribus porro quo expedita reprehenderit? Corporis minima, et saepe necessitatibus, a sint totam quas ea quos, libero optio? Cum maiores fuga voluptatum.
+        </p>
       </GlassContainer>
     </Background>
   )

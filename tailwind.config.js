@@ -1,6 +1,7 @@
 module.exports = {
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   darkMode: false, // or 'media' or 'class'
+  mode: 'jit',
   theme: {
     extend: {
       colors: {
@@ -15,6 +16,7 @@ module.exports = {
         title: ['Kaushan Script'],
         body: ['Open Sans'],
       },
+      transitionDuration: ['hover', 'focus'],
     },
   },
   variants: {

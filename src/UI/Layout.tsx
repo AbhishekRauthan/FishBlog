@@ -1,9 +1,9 @@
-import React, { Children, FC } from "react"
+import React, { FC } from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import "../style.css"
 
-interface Props {}
+interface Props { }
 
 const Layout: FC<Props> = ({ children }) => {
   return (

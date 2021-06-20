@@ -9,14 +9,14 @@ interface Props {
 
 const NavContainer = tw.nav`fixed w-full mx-auto flex flex-wrap flex-row items-center justify-between bg-darkBlue lg:px-6 text-base lg:pl-10 shadow-lg z-10`
 
-const NavTitle = tw.div`font-title uppercase lg:text-3xl text-crimson`
+const NavTitle = tw.div`font-title uppercase lg:text-3xl text-crimson hover:text-slate transition delay-200`
 
-const NavList = tw.div`flex justify-between lg:pr-4`
+const NavList = tw.div`flex justify-between lg:pr-4 lg:mr-5`
 
 const NavItem = ({ to, text }: Props) => {
   return (
     <Link
-      tw="text-2xl capitalize text-slate lg:py-4 hover:text-white border-b-2 border-transparent hover:border-crimson lg:px-4 transition duration-300 mr-5"
+      tw="text-2xl capitalize text-slate lg:py-4 hover:text-white border-b-2 border-transparent hover:border-crimson lg:px-3.5 transition duration-300 lg:mx-5"
       to={`/${to}`}
     >
       {text}
@@ -33,6 +33,7 @@ const Navbar = () => {
       </NavTitle>
       <NavList>
         <NavItem to="about" text="about" />
+        <NavItem to="shop" text="shop" />
         <NavItem to="contact" text="contact" />
       </NavList>
     </NavContainer>

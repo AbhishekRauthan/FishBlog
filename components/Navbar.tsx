@@ -1,9 +1,9 @@
-const Navbar = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+import tw, { styled } from "twin.macro";
 
-export default Navbar
+const Nav = tw.header``;
+
+const Navbar = () => {
+  return <Nav></Nav>;
+};
+
+export default Navbar;

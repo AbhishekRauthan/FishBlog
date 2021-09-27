@@ -1,5 +1,14 @@
-// In .babelrc.js
 module.exports = {
-  presets: [['next/babel', { 'preset-react': { runtime: 'automatic' } }]],
-  plugins: ['babel-plugin-macros', ['styled-components', { ssr: true }]],
+  presets: [
+    [
+      'next/babel',
+      {
+        'preset-react': {
+          runtime: 'automatic',
+          importSource: '@emotion/react',
+        },
+      },
+    ],
+  ],
+  plugins: ['@emotion/babel-plugin', 'babel-plugin-macros'],
 }
